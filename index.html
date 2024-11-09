@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+
+    <!-- Formulario para agregar/editar usuarios -->
+    <div class="form-container">
+        <input type="hidden" id="nombre">
+        <input type="text" id="lugar" placeholder="lugar">
+        <input type="datetime" id="fecha_hora" placeholder="fecha_hora">
+        <input type="text" id="descripcion" placeholder="descripcion">
+        <button onclick="crear_editar_Usuarios()">Guardar Evento</button>
+    </div>
+
+    <!-- Tabla de usuarios -->
+    <table id="eventos-table">
+        <thead>
+            <tr>
+                <th>nombre</th>
+                <th>lugar</th>
+                <th>fecha_hora</th>
+                <th>descripcion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se añadirán los usuarios -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
